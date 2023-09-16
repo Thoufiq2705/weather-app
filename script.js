@@ -34,17 +34,17 @@ async function weatherReports(city) {
                 humiditySpeed.textContent = data.wind.speed + " km/h";
 
                     if (weatherImg === "Clouds"){
-                        mainImg.src = "../images/clouds.png";
+                        mainImg.src = "images/clouds.png";
                     }else if(weatherImg === "Clear") {
-                        mainImg.src = "../images/clear.png";
+                        mainImg.src = "images/clear.png";
                     }else if(weatherImg === "Mist") {
-                        mainImg.src = "../images/mist.png";
+                        mainImg.src = "images/mist.png";
                     }else if(weatherImg === "Rain"){
-                        mainImg.src = "../images/rain.png";
+                        mainImg.src = "images/rain.png";
                     }else if(weatherImg === "snow") {
-                        mainImg.src = "../images/snow.png";
+                        mainImg.src = "images/snow.png";
                     }else {
-                        mainImg.src = "../images/drizzle.png";
+                        mainImg.src = "images/drizzle.png";
                     }
                 }
 }
