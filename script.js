@@ -16,7 +16,7 @@ async function weatherReports(city) {
    
     const weatherData = await fetch(apiUrl + city +`&APPID=db4ae6c18224e37a131e498905e194fe`);
     const data = await weatherData.json();
-    // console.log(data);
+    console.log(data);
             if(data.cod == '404'){
                 document.getElementById("parent").style.display = "none";
                 return document.getElementById("invalid").style.display = "block";
@@ -24,6 +24,7 @@ async function weatherReports(city) {
             }else{
 
                 document.getElementById("parent").style.display = "block";
+                document.getElementById("invalid").style.display = "none";
 
                 const weatherImg = data.weather[0].main;
 
@@ -34,17 +35,17 @@ async function weatherReports(city) {
                 humiditySpeed.textContent = data.wind.speed + " km/h";
 
                     if (weatherImg === "Clouds"){
-                        mainImg.src = "../images/clouds.png";
+                        mainImg.src = "images/clouds.png";
                     }else if(weatherImg === "Clear") {
-                        mainImg.src = "../images/clear.png";
+                        mainImg.src = "images/clear.png";
                     }else if(weatherImg === "Mist") {
-                        mainImg.src = "../images/mist.png";
+                        mainImg.src = "images/mist.png";
                     }else if(weatherImg === "Rain"){
-                        mainImg.src = "../images/rain.png";
+                        mainImg.src = "images/rain.png";
                     }else if(weatherImg === "snow") {
-                        mainImg.src = "../images/snow.png";
+                        mainImg.src = "images/snow.png";
                     }else {
-                        mainImg.src = "../images/drizzle.png";
+                        mainImg.src = "images/drizzle.png";
                     }
                 }
 }
@@ -53,3 +54,9 @@ button.addEventListener("click", function(){
 
     inputValue.value = "";
 });
+
+document.addEventListener('keydown', function(e){
+    if (e.code === 'Enter' && inputValue.value){
+        weatherReports(inputValue.value)
+    }
+})
