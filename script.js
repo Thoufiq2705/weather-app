@@ -16,7 +16,7 @@ async function weatherReports(city) {
    
     const weatherData = await fetch(apiUrl + city +`&APPID=db4ae6c18224e37a131e498905e194fe`);
     const data = await weatherData.json();
-    // console.log(data);
+    console.log(data);
             if(data.cod == '404'){
                 document.getElementById("parent").style.display = "none";
                 return document.getElementById("invalid").style.display = "block";
@@ -24,6 +24,7 @@ async function weatherReports(city) {
             }else{
 
                 document.getElementById("parent").style.display = "block";
+                document.getElementById("invalid").style.display = "none";
 
                 const weatherImg = data.weather[0].main;
 
@@ -53,3 +54,11 @@ button.addEventListener("click", function(){
 
     inputValue.value = "";
 });
+// <<<<<<< imgbot
+document.addEventListener('keydown', function(e){
+    if (e.code === 'Enter' && inputValue.value){
+        weatherReports(inputValue.value)
+    }
+})
+=======
+// >>>>>>> Main
