@@ -54,9 +54,11 @@ button.addEventListener("click", function(){
 
     inputValue.value = "";
 });
-
+// <<<<<<< imgbot
 document.addEventListener('keydown', function(e){
     if (e.code === 'Enter' && inputValue.value){
         weatherReports(inputValue.value)
     }
 })
+=======
+// >>>>>>> Main
