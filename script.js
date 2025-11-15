@@ -11,7 +11,7 @@ const degreeCity = document.getElementById("degree-city");
 const humidityPercentage = document.getElementById("humidity-per");
 const humiditySpeed = document.getElementById("humidity-speed");
 
-
+//this is comments for weather application which tells the real time wether details of all regions with the help of custom weather API
 async function weatherReports(city) {
    
     const weatherData = await fetch(apiUrl + city +`&APPID=db4ae6c18224e37a131e498905e194fe`);
