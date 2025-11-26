@@ -11,7 +11,7 @@ Features
 - Current temperature, humidity, wind speed, and weather description
 - Responsive layout for desktop and mobile
 - Graceful handling of errors (invalid city, network issues)
-
+ 
 Tech stack
 - JavaScript
 - HTML5
