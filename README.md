@@ -7,7 +7,7 @@ Demo
 - Live demo: (If you host it, put the URL here.)
 
 Features
-- Search weather by city name
+- Search weather by city name 
 - Current temperature, humidity, wind speed, and weather description
 - Responsive layout for desktop and mobile
 - Graceful handling of errors (invalid city, network issues)
