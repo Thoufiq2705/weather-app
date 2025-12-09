@@ -6,7 +6,7 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 const inputValue = document.getElementById("input");
 const button = document.querySelector("button");
 const mainImg = document.getElementById("main-img");       
-const degreeText = document.getElementById("degree-text");    
+const degreeText = document.getElementById("degree-text");     
 const degreeCity = document.getElementById("degree-city");
 const humidityPercentage = document.getElementById("humidity-per");
 const humiditySpeed = document.getElementById("humidity-speed");
