@@ -1,4 +1,4 @@
-# Weather App
+  # Weather App
 
 A small, lightweight weather application built with HTML, CSS, and JavaScript that shows current weather data for a searched location. This project fetches weather data from a public weather API and displays it in a clean, responsive UI.
 
