@@ -13,7 +13,7 @@ Features
 - Graceful handling of errors (invalid city, network issues)
  
 Tech stack
-- JavaScript.  
+- JavaScript.   
 - HTML5
 - CSS3
 - Weather data from a public API (e.g., OpenWeatherMap)
