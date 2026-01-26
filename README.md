@@ -17,7 +17,7 @@ Tech stack
 - HTML5
 - CSS3
 - Weather data from a public API (e.g., OpenWeatherMap)
-
+ 
 Prerequisites
 - A modern web browser
 - (Optional) Node.js + a static server for local development, e.g. `live-server` or `http-server`
