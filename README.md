@@ -5,7 +5,7 @@ A small, lightweight weather application built with HTML, CSS, and JavaScript th
 Demo
 - Add a screenshot named `screenshot.png` in the repo root and reference it here (optional).
 - Live demo: (If you host it, put the URL here.)
-
+ 
 Features
 - Search weather by city name    
 - Current temperature, humidity, wind speed, and weather description 
